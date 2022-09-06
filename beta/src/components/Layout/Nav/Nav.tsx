@@ -139,7 +139,7 @@ export default function Nav() {
         </NextLink>
         <div className="lg:w-full leading-loose hidden sm:flex flex-initial items-center h-auto pr-5 lg:pr-5 pt-0.5">
           <div className="px-1 mb-px bg-highlight dark:bg-highlight-dark rounded text-link dark:text-link-dark font-bold tracking-wide text-xs whitespace-nowrap">
-            v18.0.1
+            v18.2.0
           </div>
         </div>
         <div className="block dark:hidden">
