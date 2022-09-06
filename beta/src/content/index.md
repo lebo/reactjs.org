@@ -4,21 +4,125 @@ title: React Docs Beta
 permalink: index.html
 ---
 
+<FullWidth>
 <HomepageHero />
+</FullWidth>
 
-## What is this site? {/*what-is-this-site*/}
+---
 
-We are rewriting the React documentation with a few differences:
+## A Simple Component {/*a-simple-component*/}
+React components implement a `render()` method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by `render()` via `this.props`.
 
-- All explanations are **written using Hooks** rather than classes.
-- We've added **interactive examples** and visual diagrams.
-- Guides include **challenges (with solutions!)** to check your understanding.
+**JSX is optional and not required to use React**. Try the [Babel REPL](https://babeljs.io/repl/#?presets=react&code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA) to see the raw JavaScript code produced by the JSX compilation step.
 
-This beta website contains the current draft of the new docs.
+<Sandpack>
 
-## This is a work in progress! {/*this-is-a-work-in-progress*/}
+```js
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
 
-This is a **beta website**. There will be bugs, performance issues, and missing content.
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
+
+</Sandpack>
+
+---
+
+## A Stateful Component {/*a-stateful-component*/}
+In addition to taking input data (accessed via `this.props`), a component can maintain internal state data (accessed via `this.state`). When a component’s state data changes, the rendered markup will be updated by re-invoking `render()`.
+
+<Sandpack>
+
+```js
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
+
+</Sandpack>
+
+---
+
+## An Application {/*an-application*/}
+Using `props` and `state`, we can put together a small Todo application. This example uses `state` to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
+
+<Sandpack>
+
+```js
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
+
+</Sandpack>
+
+---
+
+## A Component Using External Plugins {/*a-component-using-external-plugins*/}
+React allows you to interface with other libraries and frameworks. This example uses **remarkable**, an external Markdown library, to convert the `<textarea>`’s value in real time.
+
+<Sandpack>
+
+```js
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
+
+</Sandpack>
+
+---
 
 ## How much content is ready? {/*how-much-content-is-ready*/}
 

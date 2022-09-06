@@ -65,7 +65,7 @@ const UL = (p: JSX.IntrinsicElements['ul']) => (
 );
 
 const Divider = () => (
-  <hr className="my-6 block border-b border-border dark:border-border-dark" />
+  <hr className="mt-12 mb-9 block border-t border-border dark:border-border-dark" />
 );
 const Wip = ({children}: {children: React.ReactNode}) => (
   <ExpandableCallout type="wip">{children}</ExpandableCallout>
