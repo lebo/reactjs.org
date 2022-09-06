@@ -6,9 +6,10 @@ permalink: index.html
 
 <FullWidth>
 <HomepageHero />
-</FullWidth>
 
 ---
+
+</FullWidth>
 
 ## A Simple Component {/*a-simple-component*/}
 React components implement a `render()` method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by `render()` via `this.props`.
@@ -38,7 +39,11 @@ export default function MyApp() {
 
 </Sandpack>
 
+<FullWidth>
+
 ---
+
+</FullWidth>
 
 ## A Stateful Component {/*a-stateful-component*/}
 In addition to taking input data (accessed via `this.props`), a component can maintain internal state data (accessed via `this.state`). When a component’s state data changes, the rendered markup will be updated by re-invoking `render()`.
@@ -66,7 +71,11 @@ export default function MyApp() {
 
 </Sandpack>
 
+<FullWidth>
+
 ---
+
+</FullWidth>
 
 ## An Application {/*an-application*/}
 Using `props` and `state`, we can put together a small Todo application. This example uses `state` to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
@@ -94,7 +103,11 @@ export default function MyApp() {
 
 </Sandpack>
 
+<FullWidth>
+
 ---
+
+</FullWidth>
 
 ## A Component Using External Plugins {/*a-component-using-external-plugins*/}
 React allows you to interface with other libraries and frameworks. This example uses **remarkable**, an external Markdown library, to convert the `<textarea>`’s value in real time.
@@ -122,7 +135,11 @@ export default function MyApp() {
 
 </Sandpack>
 
+<FullWidth>
+
 ---
+
+</FullWidth>
 
 ## How much content is ready? {/*how-much-content-is-ready*/}
 
