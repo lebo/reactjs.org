@@ -7,6 +7,9 @@ import {Logo} from 'components/Logo';
 import HomepageCard from 'components/MDX/HomepageCard';
 import ButtonLink from 'components/ButtonLink';
 import {IconArrowSmall} from '../Icon/IconArrowSmall';
+import {IconLearnOnce} from '../Icon/IconLearnOnce';
+import {IconComponentBased} from '../Icon/IconComponentBased';
+import {IconDeclarative} from '../Icon/IconDeclarative';
 
 function HomepageHero() {
   return (
@@ -48,7 +51,9 @@ function HomepageHero() {
       </div>
       <section className="mt-8 sm:my-10 grid grid-cols-1 xl:grid-cols-3 gap-x-8 gap-y-4">
         <div className="flex flex-col justify-center">
-          <HomepageCard title="Declarative">
+          <HomepageCard
+            icon={<IconDeclarative className="w-full h-full" />}
+            title="Declarative">
             <p>
               React makes it painless to create interactive UIs. Design simple
               views for each state in your application, and React will
@@ -59,7 +64,9 @@ function HomepageHero() {
           </HomepageCard>
         </div>
         <div className="flex flex-col justify-center">
-          <HomepageCard title="Component-Based">
+          <HomepageCard
+            icon={<IconComponentBased className="w-full h-full" />}
+            title="Component-Based">
             <p>
               Build encapsulated components that manage their own state, then
               compose them to make complex UIs. Since component logic is written
@@ -69,7 +76,9 @@ function HomepageHero() {
           </HomepageCard>
         </div>
         <div className="flex flex-col justify-center">
-          <HomepageCard title="Learn Once, Write Anywhere">
+          <HomepageCard
+            icon={<IconLearnOnce className="w-full h-full" />}
+            title="Learn Once, Write Anywhere">
             <p>
               We don’t make assumptions about the rest of your technology stack,
               so you can develop new features in React without rewriting
