@@ -27,7 +27,7 @@ function ButtonLink({
     'inline-flex font-medium items-center border border-transparent outline-none focus:ring-2 focus:ring-offset-2 focus:ring-link active:bg-link active:text-white active:ring-0 active:ring-offset-0 leading-normal',
     {
       'bg-link text-white hover:bg-opacity-80': type === 'primary',
-      'border-gray-20 dark:border-gray-60 border text-primary dark:text-primary-dark hover:text-link focus:bg-link focus:text-white focus:border-link focus:border-1':
+      'border-secondary-button-border dark:border-secondary-button-border-dark border text-primary dark:text-primary-dark hover:text-link focus:bg-link focus:text-white focus:border-link focus:border-1':
         type === 'secondary',
       'text-lg rounded-full px-4 py-2': size === 'lg',
       'text-base rounded-full px-4 py-1.5': size === 'md',

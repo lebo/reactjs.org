@@ -14,8 +14,8 @@ import {IconDeclarative} from '../Icon/IconDeclarative';
 function HomepageHero() {
   return (
     <>
-      <div className="mt-8 lg:mt-10 mb-0 sm:mt-8 sm:mb-8 lg:mb-6 flex-col sm:flex-row flex grow items-start sm:items-center justify-start max-w-4xl ml-0 2xl:mx-auto">
-        <Logo className="text-link dark:text-link-dark w-20 sm:w-36 mr-6 mb-4 sm:mb-0 h-auto" />
+      <div className="mt-8 lg:mt-12 mb-0 sm:mt-12 sm:mb-8 lg:mb-6 flex-col sm:flex-row flex grow items-start sm:items-center justify-start max-w-4xl ml-0 2xl:mx-auto">
+        <Logo className="text-link dark:text-link-dark w-20 sm:w-36 mr-6 mb-4 mt-1 sm:mb-0 h-auto self-start" />
         <div className="flex flex-wrap">
           <div>
             <h1 className="text-5xl mr-4 flex wrap font-bold leading-tight text-primary dark:text-primary-dark">
@@ -49,7 +49,7 @@ function HomepageHero() {
           </div>
         </div>
       </div>
-      <section className="mt-8 sm:my-10 grid grid-cols-1 xl:grid-cols-3 gap-x-8 gap-y-4">
+      <section className="mt-6 sm:mt-8 sm:mb-10 grid grid-cols-1 xl:grid-cols-3 gap-x-8 gap-y-4">
         <div className="flex flex-col justify-center">
           <HomepageCard
             icon={<IconDeclarative className="w-full h-full" />}

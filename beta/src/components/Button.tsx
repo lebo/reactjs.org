@@ -34,7 +34,7 @@ export function Button({
         {
           'bg-link border-link text-white hover:bg-link focus:bg-link active:bg-link':
             active,
-          'bg-transparent text-secondary dark:text-secondary-dark border-gray-20 dark:border-gray-60 border hover:text-link focus:text-link border-transparent':
+          'bg-transparent text-secondary dark:text-secondary-dark border-secondary-button-border dark:border-secondary-button-border-dark border hover:text-link focus:text-link border-transparent':
             !active,
         }
       )}>

@@ -21,6 +21,8 @@ module.exports = {
   'border-dark': '#343A46', // gray-80
   'secondary-button': '#EBECF0', // gray-10
   'secondary-button-dark': '#404756', // gray-70
+  'secondary-button-border': '#BCC1CD', // gray-20
+  'secondary-button-border-dark': '#404756', // gray-70
 
   // Gray
   'gray-95': '#16181D',
