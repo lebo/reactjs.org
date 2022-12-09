@@ -67,7 +67,7 @@ function SendFeedback({onSubmit}: {onSubmit: () => void}) {
       {!isSubmitted && (
         <button
           aria-label="Yes"
-          className="bg-secondary-button dark:bg-secondary-button-dark rounded-lg text-primary dark:text-primary-dark px-3 mr-2"
+          className="bg-secondary-button dark:bg-secondary-button-dark rounded-full text-primary dark:text-primary-dark px-3 mr-2"
           onClick={() => {
             setIsSubmitted(true);
             onSubmit();
@@ -79,7 +79,7 @@ function SendFeedback({onSubmit}: {onSubmit: () => void}) {
       {!isSubmitted && (
         <button
           aria-label="No"
-          className="bg-secondary-button dark:bg-secondary-button-dark rounded-lg text-primary dark:text-primary-dark px-3"
+          className="bg-secondary-button dark:bg-secondary-button-dark rounded-full text-primary dark:text-primary-dark px-3"
           onClick={() => {
             setIsSubmitted(true);
             onSubmit();

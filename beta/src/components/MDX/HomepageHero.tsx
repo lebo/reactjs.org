@@ -29,7 +29,7 @@ function HomepageHero() {
                 href={'/learn'}
                 className="mr-2"
                 type="primary"
-                size="md"
+                size="lg"
                 label="Take the Tutorial">
                 Learn React
               </ButtonLink>
@@ -37,7 +37,7 @@ function HomepageHero() {
                 href={'/apis/react'}
                 className="mr-2"
                 type="secondary"
-                size="md"
+                size="lg"
                 label="Take the Tutorial">
                 API
                 <IconArrowSmall

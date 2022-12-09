@@ -18,6 +18,15 @@ module.exports = {
       ...defaultTheme.screens,
       betterhover: {raw: '(hover: hover)'},
     },
+    borderRadius: {
+      none: '0',
+      sm: '0.125rem',
+      DEFAULT: '0.25rem',
+      md: '0.5rem',
+      lg: '.75rem',
+      full: '9999px',
+      large: '12px',
+    },
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       DEFAULT:
