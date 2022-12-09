@@ -36,6 +36,10 @@ export interface RouteItem {
   routes?: RouteItem[];
   /** Adds a separator above the route item */
   hasSeparator?: boolean;
+  /** Adds a section header above the route item */
+  hasSectionHeader?: boolean;
+  /** Title of section header */
+  sectionHeader?: string;
 }
 
 export interface Routes {

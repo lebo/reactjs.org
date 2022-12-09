@@ -8,6 +8,15 @@
       "path": "",
       "routes": [
         {
+          "title": "Home",
+          "path": "/"
+        },
+        {
+          "title": "Installation",
+          "hasSectionHeader": true,
+          "sectionHeader": "Learn React"
+        },
+        {
           "title": "Installation",
           "path": "/learn/installation",
           "routes": [
@@ -190,19 +199,22 @@
           ]
         },
         {
-          "title": "Community",
-          "hasSeparator": true,
+          "title": "Test",
           "path": "/learn/community",
-          "routes": [{
-            "title": "Acknowledgements",
-            "path": "/learn/acknowledgements"
-          }, {
-            "title": "Docs Contributors",
-            "path": "/learn/docs-contributors"
-          }, {
-            "title": "Meet the Team",
-            "path": "/learn/meet-the-team"
-          }]
+          "hasSectionHeader": true,
+          "sectionHeader": "Community"
+        },
+        {
+          "title": "Acknowledgements",
+          "path": "/learn/acknowledgements"
+        },
+        {
+          "title": "Docs Contributors",
+          "path": "/learn/docs-contributors"
+        },
+        {
+          "title": "Meet the Team",
+          "path": "/learn/meet-the-team"
         },
         {
           "title": "Blog",
