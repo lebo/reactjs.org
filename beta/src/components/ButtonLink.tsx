@@ -24,10 +24,11 @@ function ButtonLink({
 }: JSX.IntrinsicElements['a'] & ButtonLinkProps) {
   const classes = cn(
     className,
-    'inline-flex font-medium items-center border border-transparent outline-none focus:ring-2 focus:ring-offset-2 focus:ring-link active:bg-link active:text-white active:ring-0 active:ring-offset-0 leading-normal',
+    'inline-flex font-medium items-center border outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-wash dark:focus:ring-offset-wash-dark focus:ring-link active:ring-0 active:ring-offset-0 leading-normal',
     {
-      'bg-link text-white hover:bg-opacity-80': type === 'primary',
-      'border-secondary-button-border dark:border-secondary-button-border-dark border text-primary dark:text-primary-dark hover:text-link focus:bg-link focus:text-white focus:border-link focus:border-1':
+      'bg-link border-link text-white hover:bg-opacity-80 active:bg-opacity-100':
+        type === 'primary',
+      'border-secondary-button-border dark:border-secondary-button-border-dark border text-primary dark:text-primary-dark hover:bg-card dark:hover:bg-card-dark dark:hover:bg-opacity-100 hover:bg-opacity-50 active:bg-opacity-100 dark:active:bg-opacity-50':
         type === 'secondary',
       'text-lg rounded-full px-4 py-2': size === 'lg',
       'text-base rounded-full px-4 py-1.5': size === 'md',

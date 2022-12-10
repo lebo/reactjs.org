@@ -49,7 +49,7 @@ function HomepageHero() {
           </div>
         </div>
       </div>
-      <section className="mt-6 sm:mt-8 sm:mb-10 grid grid-cols-1 xl:grid-cols-3 gap-x-8 gap-y-4">
+      <section className="mt-6 sm:mt-8 sm:mb-10 grid grid-cols-1 xl:grid-cols-3 gap-x-4 gap-y-4">
         <div className="flex flex-col justify-center">
           <HomepageCard
             icon={<IconDeclarative className="w-full h-full" />}
