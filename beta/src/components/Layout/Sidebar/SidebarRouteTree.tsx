@@ -100,16 +100,7 @@ export function SidebarRouteTree({
   return (
     <ul>
       {currentRoutes.map(
-        ({
-          path,
-          title,
-          routes,
-          wip,
-          heading,
-          hasSeparator,
-          hasSectionHeader,
-          sectionHeader,
-        }) => {
+        ({path, title, routes, wip, heading, hasSeparator}) => {
           const pagePath = path && removeFromLast(path, '.');
           const selected = slug === pagePath;
 
@@ -174,20 +165,6 @@ export function SidebarRouteTree({
                 />
                 {listItem}
               </Fragment>
-            );
-          } else if (hasSectionHeader) {
-            return (
-              <>
-                <li
-                  role="separator"
-                  className="mt-4 mb-2 ml-5 border-b border-border dark:border-border-dark"
-                />
-                <Fragment key={`${title}-${path}-${level}-separator`}>
-                  <h3 className="mt-2 mb-1 text-sm font-bold ml-5 text-gray-400 dark:text-gray-500">
-                    {sectionHeader}
-                  </h3>
-                </Fragment>
-              </>
             );
           } else {
             return listItem;

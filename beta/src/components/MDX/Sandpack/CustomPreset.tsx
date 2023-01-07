@@ -74,7 +74,7 @@ const SandboxShell = memo(function SandboxShell({
   return (
     <>
       <div
-        className="shadow-lg dark:shadow-lg-dark rounded-md"
+        className="shadow-lg dark:shadow-lg-dark rounded-lg"
         ref={containerRef}>
         <NavigationBar providedFiles={providedFiles} />
         <SandpackLayout
