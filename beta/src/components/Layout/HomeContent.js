@@ -725,8 +725,11 @@ function CommunityImages() {
 function Example1() {
   return (
     <div className="lg:pl-10 lg:pr-5 w-full">
-      <div className="mt-12 mb-2 lg:my-16 max-w-7xl mx-auto flex flex-col w-full lg:rounded-2xl lg:bg-card lg:dark:bg-card-dark">
-        <div className="flex-col gap-0 lg:gap-5 lg:rounded-2xl lg:bg-gray-10 lg:dark:bg-gray-70 shadow-inner lg:flex-row flex grow w-full mx-auto items-center">
+      <div className="relative mt-12 mb-2 lg:my-16 max-w-7xl mx-auto flex flex-col w-full lg:rounded-2xl lg:bg-card lg:dark:bg-card-dark">
+        <div class="absolute -top-20 -left-40 w-[20rem] h-[20rem] bg-green-10 dark:bg-green-50 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-80 animate-blob"></div>
+        <div class="absolute top-0 -right-40 w-[20rem] h-[20rem] bg-blue-10 dark:bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-80 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-[40%] w-[20rem] h-[20rem] bg-purple-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-4000"></div>
+        <div className="z-10 flex-col gap-0 lg:gap-5 lg:rounded-2xl backdrop-filter backdrop-blur-lg backdrop-saturate-200 lg:bg-gray-10/80 lg:dark:bg-gray-80/60 shadow-inner lg:flex-row flex grow w-full mx-auto items-center">
           <div className="lg:-m-5 h-full shadow-nav dark:shadow-nav-dark lg:rounded-2xl bg-wash dark:bg-gray-95 w-full flex grow flex-col">
             <div className="w-full bg-card dark:bg-wash-dark lg:rounded-t-2xl border-b border-black/5 dark:border-white/5">
               <h3 className="text-sm my-1 mx-5 text-tertiary dark:text-tertiary-dark select-none">
