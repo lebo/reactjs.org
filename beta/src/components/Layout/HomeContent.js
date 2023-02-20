@@ -18,6 +18,7 @@ import BlogCard from 'components/MDX/BlogCard';
 import {IconChevron} from 'components/Icon/IconChevron';
 import {IconSearch} from 'components/Icon/IconSearch';
 import {Logo} from 'components/Logo';
+import {CodeStep} from 'components/MDX/MDXComponents';
 import Link from 'components/MDX/Link';
 import CodeBlock from 'components/MDX/CodeBlock';
 import {IconNavArrow} from 'components/Icon/IconNavArrow';
@@ -134,7 +135,10 @@ export function HomeContent() {
 
         <Section background="left-card">
           <Center>
-            <Header>Create user interfaces from components</Header>
+            <Header>
+              Create user interfaces from{' '}
+              <span className="text-blue-50 dark:text-blue-40">components</span>
+            </Header>
             <Para>
               React lets you build user interfaces out of individual pieces
               called components. Create your own React components like{' '}
@@ -158,7 +162,11 @@ export function HomeContent() {
 
         <Section background="right-card">
           <Center>
-            <Header>Write components with code and markup</Header>
+            <Header>
+              Write components with{' '}
+              <span className="text-yellow-40 dark:text-yellow-40">code</span>{' '}
+              and <span className="text-blue-50 dark:text-blue-40">markup</span>
+            </Header>
             <Para>
               React components are JavaScript functions. Want to show content
               conditionally? Use an <Code>if</Code> statement. Need to display a
@@ -181,7 +189,13 @@ export function HomeContent() {
 
         <Section background="left-card">
           <Center>
-            <Header>Add interactivity wherever you need it</Header>
+            <Header>
+              Add{' '}
+              <span className="text-green-40 dark:text-green-30">
+                interactivity
+              </span>{' '}
+              wherever you need it
+            </Header>
             <Para>
               React components receive data and return what should appear on the
               screen. You can pass them new data in response to an interaction,
@@ -212,7 +226,11 @@ export function HomeContent() {
         <Section background="right-card">
           <Center>
             <Header>
-              Go full-stack <br className="hidden lg:inline" />
+              Go{' '}
+              <span className="text-purple-40 dark:text-purple-30">
+                full-stack
+              </span>{' '}
+              <br className="hidden lg:inline" />
               with a framework
             </Header>
             <Para>
@@ -714,7 +732,10 @@ function Example1() {
               isFromPackageImport={false}
               noShadow={true}
               noMargin={true}>
-              <div>{`function Video({ video }) {
+              <div
+                meta={
+                  '```js [[1, 1, "Video"], [1, 4, "<Thumbnail video={video} />"], [1, 9, "<LikeButton video={video} />"]]'
+                }>{`function Video({ video }) {
   return (
     <div>
       <Thumbnail video={video} />
@@ -789,7 +810,10 @@ function Example2() {
               isFromPackageImport={false}
               noShadow={true}
               noMargin={true}>
-              <div>{`function VideoList({ videos, emptyHeading }) {
+              <div
+                meta={
+                  '```js [[2, 11, "{videos.map(video =>"], [1, 12, "<Video key={video.id} video={video} />"], [2, 13, ")}"]]'
+                }>{`function VideoList({ videos, emptyHeading }) {
   const count = videos.length;
   let heading = emptyHeading;
   if (count > 0) {
@@ -875,7 +899,10 @@ function Example3() {
               isFromPackageImport={false}
               noShadow={true}
               noMargin={true}>
-              <div>{`import { useState } from 'react';
+              <div
+                meta={
+                  '```js [[4, 5, "foundVideos = filterVideos(videos, searchText)"], [4, 10, "newText => setSearchText(newText)"]]'
+                }>{`import { useState } from 'react';
 
 function SearchableVideoList({ videos }) {
   const [searchText, setSearchText] = useState('');
@@ -932,7 +959,10 @@ function Example4() {
               isFromPackageImport={false}
               noShadow={true}
               noMargin={true}>
-              <div>{`import { db } from './database.js';
+              <div
+                meta={
+                  '```js [[3, 5, "await db.Confs.find({ slug })"], [3, 16, "await db.Talks.findAll({ confId })"]]'
+                }>{`import { db } from './database.js';
 import { Suspense } from 'react';
 
 async function ConferencePage({ slug }) {

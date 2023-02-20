@@ -31,7 +31,7 @@ import {TocContext} from './TocContext';
 import type {Toc, TocItem} from './TocContext';
 import {TeamMember} from './TeamMember';
 
-function CodeStep({children, step}: {children: any; step: number}) {
+export function CodeStep({children, step}: {children: any; step: number}) {
   return (
     <span
       data-step={step}
