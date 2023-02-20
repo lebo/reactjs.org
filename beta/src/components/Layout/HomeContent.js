@@ -458,33 +458,6 @@ export function HomeContent() {
         </Section>
 
         <Section background="right-card">
-          {/* <div className="max-w-7xl mx-auto flex flex-col lg:flex-row px-5">
-            <div className="max-w-3xl lg:max-w-7xl gap-5 flex flex-col lg:flex-row lg:px-5 gap-5">
-              <div className="w-full lg:w-6/12 max-w-3xl flex flex-col items-start justify-start lg:pl-5 lg:pr-10">
-                <Header>
-                  Join a <br className="hidden lg:inline" />
-                  community <br className="hidden lg:inline" />
-                  of millions
-                </Header>
-                <Para>
-                  You’re not alone. Two million developers from all over the
-                  world visit the React docs every month. React is something
-                  that people and teams can agree on.
-                </Para>
-              </div>
-              <div className="w-full lg:w-6/12">
-                <Para>
-                  This is why React is more than a library, an architecture, or
-                  even an ecosystem. React is a community. It’s a place where
-                  you can ask for help, find opportunities, and meet new
-                  friends. You will meet both developers and designers,
-                  beginners and experts, researchers and artists, teachers and
-                  students. Our backgrounds may be very different, but React
-                  lets us all create user interfaces together.
-                </Para>
-              </div>
-            </div>
-          </div> */}
           <div className="w-full">
             <div className="mx-auto flex flex-col max-w-4xl">
               <Center>
@@ -726,12 +699,13 @@ function Example1() {
   return (
     <div className="lg:pl-10 lg:pr-5 w-full">
       <div className="relative mt-12 mb-2 lg:my-16 max-w-7xl mx-auto flex flex-col w-full lg:rounded-2xl lg:bg-card lg:dark:bg-card-dark">
-        <div class="absolute -top-20 -left-40 w-[20rem] h-[20rem] bg-green-10 dark:bg-green-50 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-80 animate-blob"></div>
-        <div class="absolute top-0 -right-40 w-[20rem] h-[20rem] bg-blue-10 dark:bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-80 animate-blob animation-delay-2000"></div>
-        <div class="absolute -bottom-8 left-[40%] w-[20rem] h-[20rem] bg-purple-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-4000"></div>
-        <div className="z-10 flex-col gap-0 lg:gap-5 lg:rounded-2xl backdrop-filter backdrop-blur-lg backdrop-saturate-200 lg:bg-gray-10/80 lg:dark:bg-gray-80/60 shadow-inner lg:flex-row flex grow w-full mx-auto items-center">
-          <div className="lg:-m-5 h-full shadow-nav dark:shadow-nav-dark lg:rounded-2xl bg-wash dark:bg-gray-95 w-full flex grow flex-col">
-            <div className="w-full bg-card dark:bg-wash-dark lg:rounded-t-2xl border-b border-black/5 dark:border-white/5">
+        <div className="z-0 absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-50 via-blue-50 to-purple-60 sm:rounded-3xl" />
+        <div class="absolute top-20 right-0 w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob"></div>
+        <div class="absolute top-20 -right-[20] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-20 left-[40%] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-4000"></div>
+        <div className="z-10 flex-col gap-0 lg:gap-10 lg:rounded-2xl backdrop-filter backdrop-blur-lg backdrop-saturate-200 lg:bg-gray-10/90 lg:dark:bg-gray-80/90 shadow-inner-border dark:shadow-inner-border-dark lg:flex-row flex grow w-full mx-auto items-center">
+          <div className="relative lg:-m-5 h-full shadow-nav dark:shadow-nav-dark lg:rounded-2xl bg-wash dark:bg-gray-95 w-full flex grow flex-col">
+            <div className="z-10 w-full bg-card dark:bg-wash-dark lg:rounded-t-2xl border-b border-black/5 dark:border-white/5">
               <h3 className="text-sm my-1 mx-5 text-tertiary dark:text-tertiary-dark select-none">
                 Video.js
               </h3>
@@ -754,8 +728,10 @@ function Example1() {
 }
           `}</div>
             </CodeBlock>
+            {/* tilted version */}
+            {/* <div className="-z-[1] absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-50 via-blue-50 to-purple-60 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl" /> */}
           </div>
-          <div className="mt-5 w-full p-2.5 xs:p-5 lg:p-10 flex grow justify-center">
+          <div className="mt-5 w-full p-2.5 xs:p-5 xs:pr-10 lg:p-10 flex grow justify-center">
             <ExamplePanel>
               <Video
                 video={{
