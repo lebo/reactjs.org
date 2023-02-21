@@ -164,8 +164,8 @@ export function HomeContent() {
           <Center>
             <Header>
               Write components with{' '}
-              <span className="text-green-40 dark:text-green-30">code</span> and{' '}
-              <span className="text-pink-40 dark:text-pink-20">markup</span>
+              <span className="text-pink-40 dark:text-pink-20">code</span> and{' '}
+              <span className="text-green-40 dark:text-green-30">markup</span>
             </Header>
             <Para>
               React components are JavaScript functions. Want to show content
