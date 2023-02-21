@@ -165,7 +165,7 @@ export function HomeContent() {
             <Header>
               Write components with{' '}
               <span className="text-yellow-40 dark:text-yellow-30">code</span>{' '}
-              and markup
+              and <span className="text-blue-50 dark:text-blue-40">markup</span>
             </Header>
             <Para>
               React components are JavaScript functions. Want to show content
@@ -812,7 +812,7 @@ function Example2() {
               noMargin={true}>
               <div
                 meta={
-                  '```js [[2, 4, "if (count > 0) {"], [2, 7, "}"], [2, 11, "{videos.map(video =>"], [2, 13, ")}"]]'
+                  '```js [[2, 11, "{videos.map(video =>"], [1, 12, "<Video key={video.id} video={video} />"], [2, 13, ")}"]]'
                 }>{`function VideoList({ videos, emptyHeading }) {
   const count = videos.length;
   let heading = emptyHeading;
