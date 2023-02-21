@@ -164,8 +164,8 @@ export function HomeContent() {
           <Center>
             <Header>
               Write components with{' '}
-              <span className="text-yellow-40 dark:text-yellow-30">code</span>{' '}
-              and <span className="text-blue-50 dark:text-blue-40">markup</span>
+              <span className="text-green-40 dark:text-green-30">code</span> and{' '}
+              <span className="text-pink-40 dark:text-pink-20">markup</span>
             </Header>
             <Para>
               React components are JavaScript functions. Want to show content
@@ -191,7 +191,7 @@ export function HomeContent() {
           <Center>
             <Header>
               Add{' '}
-              <span className="text-green-40 dark:text-green-30">
+              <span className="text-yellow-40 dark:text-yellow-30">
                 interactivity
               </span>{' '}
               wherever you need it
@@ -732,10 +732,7 @@ function Example1() {
               isFromPackageImport={false}
               noShadow={true}
               noMargin={true}>
-              <div
-                meta={
-                  '```js [[1, 1, "Video"], [1, 4, "<Thumbnail video={video} />"], [1, 9, "<LikeButton video={video} />"]]'
-                }>{`function Video({ video }) {
+              <div meta={''}>{`function Video({ video }) {
   return (
     <div>
       <Thumbnail video={video} />
@@ -782,23 +779,23 @@ function Example2() {
       id: 1,
       title: 'Second video',
       description: 'Video description',
-      image: 'red',
+      image: 'green',
     },
     {
       id: 2,
       title: 'Third video',
       description: 'Video description',
-      image: 'green',
+      image: 'red',
     },
   ];
 
   return (
     <div className="lg:pl-10 lg:pr-5 w-full">
       <div className="relative mt-12 mb-2 lg:my-16 max-w-7xl mx-auto flex flex-col w-full lg:rounded-2xl lg:bg-card lg:dark:bg-card-dark">
-        <div className="z-0 absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-50 via-blue-50 to-purple-60 sm:rounded-3xl" />
-        <div class="absolute top-20 right-0 w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob"></div>
-        <div class="absolute top-20 -right-[20] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-2000"></div>
-        <div class="absolute -bottom-20 left-[40%] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-4000"></div>
+        <div className="z-0 absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-green-50 via-pink-50 to-purple-60 sm:rounded-3xl" />
+        <div class="absolute top-20 right-0 w-[20rem] h-[20rem] bg-green-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob"></div>
+        <div class="absolute top-20 -right-[20] w-[20rem] h-[20rem] bg-green-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-20 left-[40%] w-[20rem] h-[20rem] bg-pink-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-4000"></div>
         <div className="z-10 flex-col gap-0 lg:gap-10 lg:rounded-2xl backdrop-filter backdrop-blur-lg backdrop-saturate-200 lg:bg-gray-10/90 lg:dark:bg-gray-80/90 shadow-inner-border dark:shadow-inner-border-dark lg:flex-row flex grow w-full mx-auto items-center">
           <div className="lg:-m-5 h-full shadow-nav dark:shadow-nav-dark lg:rounded-2xl bg-wash dark:bg-gray-95 w-full flex grow flex-col">
             <div className="w-full bg-card dark:bg-wash-dark lg:rounded-t-2xl border-b border-black/5 dark:border-white/5">
@@ -810,10 +807,7 @@ function Example2() {
               isFromPackageImport={false}
               noShadow={true}
               noMargin={true}>
-              <div
-                meta={
-                  '```js [[2, 11, "{videos.map(video =>"], [1, 12, "<Video key={video.id} video={video} />"], [2, 13, ")}"]]'
-                }>{`function VideoList({ videos, emptyHeading }) {
+              <div meta={''}>{`function VideoList({ videos, emptyHeading }) {
   const count = videos.length;
   let heading = emptyHeading;
   if (count > 0) {
@@ -884,10 +878,10 @@ function Example3() {
   return (
     <div className="lg:pl-10 lg:pr-5 w-full">
       <div className="relative mt-12 mb-2 lg:my-16 max-w-7xl mx-auto flex flex-col w-full lg:rounded-2xl lg:bg-card lg:dark:bg-card-dark">
-        <div className="z-0 absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-50 via-blue-50 to-purple-60 sm:rounded-3xl" />
-        <div class="absolute top-20 right-0 w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob"></div>
-        <div class="absolute top-20 -right-[20] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-2000"></div>
-        <div class="absolute -bottom-20 left-[40%] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-4000"></div>
+        <div className="z-0 absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-purple-50 via-yellow-50 to-pink-60 sm:rounded-3xl" />
+        <div class="absolute top-20 right-0 w-[20rem] h-[20rem] bg-yellow-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob"></div>
+        <div class="absolute top-20 -right-[20] w-[20rem] h-[20rem] bg-yellow-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-20 left-[40%] w-[20rem] h-[20rem] bg-yellow-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-4000"></div>
         <div className="z-10 flex-col gap-0 lg:gap-10 lg:rounded-2xl backdrop-filter backdrop-blur-lg backdrop-saturate-200 lg:bg-gray-10/90 lg:dark:bg-gray-80/90 shadow-inner-border dark:shadow-inner-border-dark lg:flex-row flex grow w-full mx-auto items-center">
           <div className="relative lg:-m-5 h-full shadow-nav dark:shadow-nav-dark lg:rounded-2xl bg-wash dark:bg-gray-95 w-full flex grow flex-col">
             <div className="z-10 w-full bg-card dark:bg-wash-dark lg:rounded-t-2xl border-b border-black/5 dark:border-white/5">
@@ -901,7 +895,7 @@ function Example3() {
               noMargin={true}>
               <div
                 meta={
-                  '```js [[4, 5, "foundVideos = filterVideos(videos, searchText)"], [4, 10, "newText => setSearchText(newText)"]]'
+                  '```js [[2, 10, "newText => setSearchText(newText)"]]'
                 }>{`import { useState } from 'react';
 
 function SearchableVideoList({ videos }) {
@@ -913,8 +907,8 @@ function SearchableVideoList({ videos }) {
         value={searchText}
         onChange={newText => setSearchText(newText)} />
       <VideoList
-        videos={foundVideos}
-        emptyHeading={\`No matches for "\${searchText}"\`} />
+        emptyHeading={\`No matches for "\${searchText}"\`}
+        videos={foundVideos} />
     </>
   );
 }`}</div>
@@ -944,10 +938,10 @@ function Example4() {
   return (
     <div className="lg:pl-10 lg:pr-5 w-full">
       <div className="relative mt-12 mb-2 lg:my-16 max-w-7xl mx-auto flex flex-col w-full lg:rounded-2xl lg:bg-card lg:dark:bg-card-dark">
-        <div className="z-0 absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-50 via-blue-50 to-purple-60 sm:rounded-3xl" />
-        <div class="absolute top-20 right-0 w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob"></div>
-        <div class="absolute top-20 -right-[20] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-2000"></div>
-        <div class="absolute -bottom-20 left-[40%] w-[20rem] h-[20rem] bg-blue-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-4000"></div>
+        <div className="z-0 absolute inset-0 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-50 via-purple-50 to-pink-60 sm:rounded-3xl" />
+        <div class="absolute top-20 right-0 w-[20rem] h-[20rem] bg-purple-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob"></div>
+        <div class="absolute top-20 -right-[20] w-[20rem] h-[20rem] bg-purple-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-20 left-[40%] w-[20rem] h-[20rem] bg-purple-20 rounded-full dark:mix-blend-overlay mix-blend-multiply filter blur-3xl opacity-30 dark:opacity-80 animate-blob animation-delay-4000"></div>
         <div className="z-10 flex-col gap-0 lg:gap-10 lg:rounded-2xl backdrop-filter backdrop-blur-lg backdrop-saturate-200 lg:bg-gray-10/90 lg:dark:bg-gray-80/90 shadow-inner-border dark:shadow-inner-border-dark lg:flex-row flex grow w-full mx-auto items-center">
           <div className="relative lg:-m-5 h-full shadow-nav dark:shadow-nav-dark lg:rounded-2xl bg-wash dark:bg-gray-95 w-full flex grow flex-col">
             <div className="z-10 w-full bg-card dark:bg-wash-dark lg:rounded-t-2xl border-b border-black/5 dark:border-white/5">
@@ -1333,6 +1327,7 @@ function Thumbnail({video}) {
         image === 'red' && 'from-yellow-50 via-red-50 to-purple-60',
         image === 'green' && 'from-yellow-50 via-green-50 to-purple-60',
         image === 'purple' && 'from-yellow-50 via-purple-50 to-purple-60',
+        image === 'pink' && 'from-yellow-50 via-pink-30 to-pink-60',
         typeof image === 'object' && 'from-gray-80 via-gray-95 to-gray-70',
         video.url && 'hover:opacity-95 transition-opacity'
       )}

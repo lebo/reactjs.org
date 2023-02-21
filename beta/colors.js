@@ -84,6 +84,15 @@ module.exports = {
   'red-10': '#F2DBD9', // unused
   'red-5': '#FAF1F0',
 
+  // Pink
+  'pink-60': '#A34B6B',
+  'pink-50': '#C05E7F',
+  'pink-40': '#D37194',
+  'pink-30': '#E6A0B9',
+  'pink-20': '#F3C8D3',
+  'pink-10': '#FBE6EE',
+  'pink-5': '#FEF5F8',
+
   // MISC
   'code-block': '#99a1b30f', // gray-30 @ 6%
   'gradient-blue': '#58C4DC', // Only used for the landing gradient for now.
