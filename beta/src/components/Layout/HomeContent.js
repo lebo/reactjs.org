@@ -240,7 +240,7 @@ export function HomeContent() {
         </svg>Go full-stack with a framework</div></div> */}
 
         <div className="flex justify-center items-center -mb-10 z-10 -mt-10">
-          <div className="rounded-full text-purple-40 font-bold text-display bg-fixed bg-center bg-[length:80px_100%] bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-10 via-purple-10 to-purple-40 h-20 w-20 flex justify-center items-center text-lg shadow-inner dark:border-inner-border">
+          <div className="rounded-full text-purple-40 font-bold text-display border-8 border-card bg-fixed bg-center bg-[length:80px_100%] bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-yellow-10 via-purple-10 to-purple-40 h-20 w-20 flex justify-center items-center text-lg shadow-inner dark:border-inner-border">
             <svg
               className="text-purple-50 dark:text-primary-dark"
               fill="none"
